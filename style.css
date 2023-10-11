@@ -13,5 +13,9 @@ body {
   flex-direction: row;
   background-color: rgb(31, 183, 33);
   color: white;
-  justify-content: space-between;
+  justify-content: center;
+}
+
+.menu {
+  display: flex;
 }
