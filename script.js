@@ -36,9 +36,8 @@ window.onload = () => {
     const selectPerson = document.getElementById('groupSelection');
 
     selectPerson.addEventListener('change', (event) => {
-
-
-
+        console.log(people[selectPerson.value]);
+        gerarImagens()
     })
 
 }
