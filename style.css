@@ -49,5 +49,7 @@ ul {
 .main {
   display: flex;
   width: 70%;
+  align-items: center;
+  justify-content: space-around;
   border: black 2px solid;
 }
