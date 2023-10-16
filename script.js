@@ -1,6 +1,16 @@
 
 const gerarImagens = (arrayDeDados) => {
+    const photoGrid = document.querySelector('.photo-grid')
 
+    for (let dado of arrayDeDados) {
+        const newDiv = document.createElement('div')
+        const newImg = document.createElement('img')
+
+        newImg.scr = dado;
+
+        newDid.appendChild(newImg);
+        photoGrid.appendChild(newDiv);
+    }
 
 }
 
@@ -36,8 +46,7 @@ window.onload = () => {
     const selectPerson = document.getElementById('groupSelection');
 
     selectPerson.addEventListener('change', (event) => {
-        console.log(people[selectPerson.value]);
-        gerarImagens()
+        gerarImagens(people[selectPerson.value])
     })
 
 }
