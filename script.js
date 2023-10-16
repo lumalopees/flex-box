@@ -1,14 +1,16 @@
 
 const gerarImagens = (arrayDeDados) => {
-    const photoGrid = document.querySelector('.photo-grid')
+
+    const photoGrid = document.querySelector('.photo-grid');
+    photoGrid.innerHTML = '';
 
     for (let dado of arrayDeDados) {
-        const newDiv = document.createElement('div')
-        const newImg = document.createElement('img')
+        const newDiv = document.createElement('div');
+        const newImg = document.createElement('img');
 
-        newImg.scr = dado;
+        newImg.src = dado;
 
-        newDid.appendChild(newImg);
+        newDiv.appendChild(newImg);
         photoGrid.appendChild(newDiv);
     }
 
@@ -43,10 +45,10 @@ window.onload = () => {
             'https://ca.slack-edge.com/TM13XHBBQ-U01JQRR7FSS-08320a8171e3-512'],
     }
 
-    const selectPerson = document.getElementById('groupSelection');
+    const selectPerson = document.getElementById('groupSelect');
 
-    selectPerson.addEventListener('change', (event) => {
-        gerarImagens(people[selectPerson.value])
-    })
+    selectPerson.addEventListener('change', () => {
+        gerarImagens(people[selectPerson.value]);
+    });
 
 }

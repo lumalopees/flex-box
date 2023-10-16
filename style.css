@@ -59,9 +59,13 @@ ul {
   display: flex;
   width: 20%;
   justify-content: space-between;
-  border: black 2px solid;
 }
 
 i {
   color: white;
+}
+
+.photo-grid {
+  display: flex;
+  flex-wrap: wrap;
 }
