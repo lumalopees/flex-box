@@ -7,7 +7,8 @@ const gerarImagens = (arrayDeDados) => {
     for (let dado of arrayDeDados) {
         const newDiv = document.createElement('div');
         const newImg = document.createElement('img');
-
+        
+        newDiv.className = 'photo';
         newImg.src = dado;
 
         newDiv.appendChild(newImg);

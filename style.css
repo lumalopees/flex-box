@@ -68,4 +68,18 @@ i {
 .photo-grid {
   display: flex;
   flex-wrap: wrap;
+  width: 70%;
+}
+
+.photo-grid-container {
+  display: flex;
+  justify-content: center;
+}
+
+.photo-grid img {
+  width: 300px;
+}
+
+.photo {
+  margin: 10px;
 }
